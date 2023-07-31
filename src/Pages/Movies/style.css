@@ -1,0 +1,15 @@
+.paging{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.paging .ant-pagination .ant-pagination-item{
+    background-color: #fff;
+}
+.ant-pagination-item-ellipsis{
+    background-color: #fff;
+}
+.ant-pagination-options{
+    visibility: hidden;
+}

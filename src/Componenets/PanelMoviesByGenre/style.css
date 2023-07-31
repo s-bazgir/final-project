@@ -1,0 +1,62 @@
+.moviePanel .filmList{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    position: relative;
+} 
+.moviePanel .filmList li{
+    padding: 10px 10px;
+}
+.moviePanel .filmList li img{
+    border-radius: 10px;
+    height:250px;
+    width: auto;
+}
+.moviePanel .genreTitle{
+    padding-left: 15px;   
+}
+.moviePanel .genreTitle, 
+.singleMovie{
+    color: #fff;
+}
+.singleMovie:hover{
+    color: #FFC90E;
+}
+.singleMovie h4{
+    width:170px;
+    text-align: center;
+}
+.singleMovie .movieImageHolder{
+    position: relative;
+}
+.singleMovie .movieImageHolder .movieShade{
+          position:absolute;
+          top:0;
+          right:0;
+          color:#FFFFFF;
+          opacity: 0;
+          visibility: hidden;
+          background-color: #000000;
+          padding-right: 10px;
+          width:100%;
+          height:100%;
+          transition: all 1s;  
+}
+.singleMovie .movieImageHolder:hover .movieShade{
+          opacity:0.8;
+          visibility: visible;
+          transition:all 1s;
+        }
+.singleMovie .movieImageHolder .movieShade .shadeInfo{
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+      
+
+
+
+
+

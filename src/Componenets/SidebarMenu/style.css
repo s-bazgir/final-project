@@ -1,0 +1,17 @@
+.ant-layout-sider{
+    margin-top:80px;
+    height:70vh;
+   }
+.ant-menu-item{
+    background-color: #5E5E5E;
+    color: #fff;
+}
+.ant-menu{
+    background-color: #2B2B2B;
+}
+.ant-layout-sider-children{
+    height:70vh;
+}
+.genreList{
+    height:70vh;
+}

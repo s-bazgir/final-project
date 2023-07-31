@@ -1,0 +1,35 @@
+.slide-movies-list {
+    margin-top: 50px;
+
+}
+.slide-movies-list ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after
+ {
+    background-color: #5E5E5E;    
+    color: #fff;
+}
+.slide-movies-list .swiper-wrapper{
+    width:100%;
+    background-color: #5E5E5E;
+    /* margin:0 auto; */
+    padding: 10px 10px 20px 10px;
+    border-radius: 10px;
+}
+.slide-movies-list .swiper-wrapper li img{
+    /* border-radius: 10px; */
+    /* width:100%; */
+        height: 100%;
+        width: auto; /* اینجا عرض تصاویر به طور خودکار تنظیم می‌شود */
+        object-fit: cover;
+        border-radius: 10px;    
+}
+.slide-movies-list .swiper-wrapper .selectedMovie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

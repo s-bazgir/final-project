@@ -1,0 +1,38 @@
+.register-div{
+    width:600px;
+    margin: 150px auto;
+    background-color: #222327;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.regular-btn{
+    width:300px;
+    background: #AAAAAA;
+}
+.other-btn{
+    width:300px;
+    background: #99D9EA;
+}
+#register-btn,
+#homePage-btn{
+    color: #fff;
+    border: none;
+    padding: 10px ;
+    border-radius: 10px;
+    margin: 3px;
+}
+.fieldGroup{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    height:30px
+}
+.register-div h1{
+    margin-bottom: 10px;
+}

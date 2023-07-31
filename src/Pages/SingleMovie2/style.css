@@ -1,0 +1,86 @@
+.movieDetail{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap; 
+    background-color: #242424;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 20px 10px;    
+    height:400px;
+}
+.movieDetail div{
+    width:40%;
+}
+.moviePanel{
+    background-color: #2B2B2B;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;   
+    padding-top: 2px;    
+    margin-top: 65px;
+}
+.moviePanel .movieTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    margin: 0 40px;
+}
+.movieTitleIcon{
+    font-size: 30px;
+    color: #7D7D7D;
+}
+.moviePanel .movieDetail .moviePoster img{
+   height:90%;
+   width:100%;
+   border-radius: 10px;   
+   object-fit: cover;
+   border: #000 2px solid;
+}
+.moviePanel .movieDetail .moviePoster{
+   padding-right: 30px;
+   width:20%;
+}
+.moviePanel .movieDetail .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.moviePanel .movieDetail .column .fieldGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    flex-wrap: nowrap;  
+    align-items: center;
+    gap:5px;
+    width:100%;
+}
+.moviePanel .movieDetail .column .fieldGroup .icon{
+    font-size: 17px;
+    color: #F8FF1E;
+    /* #F5C518; */
+    width:5%;
+}
+.moviePanel .movieDetail .column .fieldGroup .lable{
+    font-size: 17px;
+    color: #fff;
+    white-space: nowrap;
+}
+.moviePanel .movieDetail .column2 .fieldGroup .lable{
+    width:11%;
+}
+.moviePanel .movieDetail .column3 .fieldGroup .lable{
+    width:18%;
+}
+.moviePanel .movieDetail .column .fieldGroup .lableValues{
+    font-size: 17px;
+    color: #fff;
+}
+.movieTitleIcon:hover {
+    color: aquamarine;
+}
+
+
+
+    

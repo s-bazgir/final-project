@@ -1,0 +1,60 @@
+import {createBrowserRouter, RouterProvider }  from 'react-router-dom';
+import HomePage from './Pages/HomePage';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
+import Movies from './Pages/Movies';
+import Genres from './Pages/Genres';
+import SingleMovie from './Pages/SingleMovie';
+import SingleGenre from './Pages/SingleGenre';
+import Search  from './Pages/Search';
+import Buy from './Pages/Buy';
+import NotFound from './Pages/NotFound';
+
+const router = createBrowserRouter([
+    {
+     path: "/",
+     element: <HomePage />,
+   },
+   {
+    path: "/login",
+    element: <Login />,
+   },
+   {
+    path: "/register",
+    element: <Register />,
+  },
+  {
+   path: "/movies",
+   element: <Movies />,
+  },
+  {
+    path: "/genres",
+    element: <Genres />,
+  },
+  {
+   path: "/singleMovie/:id",
+   element: <SingleMovie />,
+  },
+  {
+    path: "/singleGenre/:id",
+    element: <SingleGenre />,
+  },
+  {
+   path: "/search",
+   element: <Search />,
+  },
+  {
+    path: "/buy",
+    element: <Buy />,
+  },  
+  {path: "*",
+   element: <NotFound />
+  }
+   ]
+   );
+   export default function SiteRouter(){
+       return(
+           <RouterProvider router={router}/>
+       )
+   }
+   

@@ -1,0 +1,55 @@
+.holderAppDownload{
+    /* width:1200px; */
+    height:300px;
+    border-radius: 10px;
+    margin: 15px auto;
+    background: #303030;
+    position: relative;
+    color: #fff;
+}
+.holderAppDownload .about{
+    position: absolute;
+    top:15px;
+    left:15px;
+}
+.holderAppDownload .downloadPart{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap:20px;
+}
+.holderAppDownload .downloadPart{
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+}
+.holderAppDownload .downloadPart div{
+    padding:5px;
+    border-radius: 10px;
+    background-color: #37383E;
+}
+.holderAppDownload .downloadPart a{
+    text-decoration: none;
+    color: #fff;
+}
+.holderAppDownload .downloadPart div img{
+    width:40px;
+    height:40px;
+}
+.holderAppDownload .downloadPart .ax-matn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+.holderAppDownload .downloadPart .matn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+}
+.holderAppDownload .downloadPart .matn h4{
+    margin: 0;
+}

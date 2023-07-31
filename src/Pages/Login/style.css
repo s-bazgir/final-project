@@ -1,0 +1,42 @@
+.enter-div{
+    width:600px;
+    margin: 150px auto;
+    background-color: #222327;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap:10px;
+}
+
+.regular-btn{
+    width:300px;
+    background: #AAAAAA;
+}
+.other-btn{
+    width:300px;
+    background: #99D9EA;
+}
+#enter-btn,
+#register-btn{
+    color: #fff;
+    border: none;
+    padding: 10px ;
+    border-radius: 10px;
+    /* margin: 3px; */
+}
+.fieldGroup{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    height:30px
+}
+.line{
+    height:3px;
+    width:100%;
+    background-color: #fff;
+}

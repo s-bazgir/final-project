@@ -1,0 +1,143 @@
+:root{
+    --color-primary: #FFC90E;
+    --color-secondary: #00A2E8; 
+}
+.card{
+    border-radius:  7px;
+    box-shadow: 0 0 20px 10px #f3f3f3 ;
+    overflow: hidden;
+}
+.card_header ,
+.card_body{
+    padding: 2rem 3rem;
+}
+.card_primary .card_header{
+    background: var(--color-primary) ;
+    color:#fff;
+}
+.card_secondary .card_header{
+    background: var(--color-secondary) ;
+    color:#fff;
+}
+.card_secondary .badge_secondary{
+    background: #02cdf1;
+}
+.badge_small{
+    font-size: 1.6rem;
+    padding: 0.5rem;
+}
+.plan_name{
+    color:#fff;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.4rem;
+    }
+    .plan_price{
+        font-size: 6rem;
+    }
+    .plan_billing_cycle{
+        font-size: 2.4rem;
+        font-weight: 300;
+        opacity: 0;
+    }
+    .plan_billing_cycle{
+        font-size: 2.4rem;
+        font-weight: 300;
+        opacity: 0.8;
+    }
+    .plan_description{
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    .plan .list_item{
+        margin-bottom: 2rem;
+    }
+    .plan_popular .card_header{
+        position: relative;
+    }
+    
+    .plan_popular .card_header::before{
+        content: url(../../../public/assets/images/bazar.png);
+        width:40px;
+        display: inline-block;
+        position: absolute;
+        top:0;
+        right:5%;
+    }
+    .badge{
+        border-radius: 20px;
+        padding: 0.5rem 2rem;
+        font-weight: bold;
+        white-space: nowrap;
+        font-size: 2rem;
+    }
+    .badge_secondary{
+        background: var(--color-secondary);
+        color:#fff;
+    }
+    .badge_primary{
+        background: var(--color-primary);
+        color:#fff;
+    }
+    .badge_small{
+        font-size: 1.6rem;
+    }
+    .list{
+        list-style: none;
+        padding-left: 0;
+        color: var(--color-headings);
+    }
+    .btn{
+        border-radius: 40px;
+        border:0;
+        cursor: pointer;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 1rem 0;
+        padding: 2rem 3rem;
+        text-align: center;
+        border:0;
+        border-radius: 40px;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+    .btn_primary{
+        background: var(--color-primary);
+        color: #fff;
+    }
+    .btn_primary:hover{
+      background: #fd4516;
+    }
+    .btn_secondary{
+        background: var(--color-secondary);
+        color: #fff;
+    }
+    .btn_secondary:hover{
+        background: #00c8eb;
+    }
+    .btn_block{
+        width:100%;
+        display: inline-block;
+    }
+    @media  screen  and (min-width: 1024px){
+        .badge{
+            font-size:1.5rem;
+        }
+        .plan_name{
+            font-size: 1.4rem;
+        }
+        .plan_price{
+            font-size: 5rem;
+        }
+        .plan_billing_cycle{
+            font-size: 1.6rem;
+        }
+        .plan_description{
+            font-size: 1.7rem;
+        }
+        .btn{
+            font-size: 1.5rem;
+        }
+    } 

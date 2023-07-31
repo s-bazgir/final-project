@@ -1,0 +1,128 @@
+.moviePanel{
+    background-color: #2B2B2B;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;   
+    padding-top: 2px;    
+    margin-top: 65px;    
+    height:100%;
+}
+.moviePanel .movieTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    margin: 0 40px;   
+}
+.moviePanel .movieTitle .movieTitleIcon{
+    font-size: 30px;
+    color: #7D7D7D;
+}
+.moviePanel .movieTitle .movieTitleIcon:hover {
+    color: aquamarine;
+}
+.moviePanel .movieDetail{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap; 
+    /* background-color: #242424; */
+    opacity: 0.6;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 20px 10px;    
+    height:400px;
+    /* position: relative; */
+     /* background-size: cover; */
+     background-repeat: no-repeat;
+}
+.moviePanel .movieDetail:hover{
+    background-color: #242424;
+    opacity: 1;
+}
+.moviePanel .movieDetail .moviePoster img{
+   /* height:500px; */
+   height:90%;
+   width:100%;
+   border-radius: 10px;   
+   object-fit: cover;
+   border: #000 2px solid;
+   background-size: cover;
+}
+.moviePanel .movieDetail .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.moviePanel .movieDetail .column1{
+    width:25%;
+}
+.moviePanel .movieDetail .column2{
+    width:33%;
+}
+.moviePanel .movieDetail .column3{
+    width:33%;
+}
+.moviePanel .movieDetail .column .fieldGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    flex-wrap: nowrap;  
+    align-items: center;
+    gap:5px;
+    width:100%;
+}
+.moviePanel .movieDetail .column .fieldGroup .icon{
+    font-size: 17px;
+    color: #F8FF1E;
+    /* #F5C518; */
+    width:5%;
+}
+.moviePanel .movieDetail .column .fieldGroup .lable{
+    font-size: 17px;
+    color: #fff;
+    white-space: nowrap;
+}
+.moviePanel .movieDetail .column2 .fieldGroup .lable{
+    width:11%;
+}
+.moviePanel .movieDetail .column3 .fieldGroup .lable{
+    width:18%;
+}
+.moviePanel .movieDetail .column .fieldGroup .lableValues{
+    font-size: 17px;
+    color: #fff;
+}
+.moviePanel .movieDetail .moviePoster .moviePosterShade{
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    color:#FFFFFF;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #000000;
+    padding-right: 10px;
+    width:100%;
+    height:100%;
+    transition: all 1s;  
+}
+.moviePanel .movieDetail .moviePoster:hover  .moviePosterShade{
+    opacity:0.5;
+    visibility: visible;
+    transition:all 1s;
+  }
+
+  .moviePanel .movieDetail .moviePoster{
+    padding-right: 30px;
+    width:100%;
+    height:100%;
+    position: relative;
+ }
+.playButton{
+    position: absolute;
+    left:40%;
+    top:40%;
+    translate: (-40%,-40%);
+    font-size: xx-large;
+}

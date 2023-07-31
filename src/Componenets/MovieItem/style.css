@@ -1,0 +1,115 @@
+.halfContainer{
+    width: 1000px;
+    margin: 0 auto;
+    height: 250px;
+}
+.halfContainer .movieItem{
+    background-color: #2B2B2B;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;   
+    padding-top: 2px;    
+    margin-top: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap; 
+    width:100%;
+    /* margin-bottom: 20px; */
+    height:300px;
+}
+.halfContainer .movieItem .column1 .poster img{
+    /* height:500px; */
+    margin: 20px 0 0 20px;
+    width:100%;
+    height:80%;
+    border-radius: 10px;   
+    object-fit: cover;
+    border: #000 2px solid;
+ }
+ .halfContainer .movieItem .column1 .poster{
+    padding-right: 30px;
+    width:100%;
+    height:100%;
+    position: relative;
+ }
+ .halfContainer .movieItem .column1 .poster .posterShade{
+                    position:absolute;
+                    top:0;
+                    right:0;
+                    left:0;
+                    color:#FFFFFF;
+                    opacity: 0;
+                    visibility: hidden;
+                    background-color: #000000;
+                    padding-right: 10px;
+                    width:100%;
+                    height:100%;
+                    transition: all 1s;  
+                }
+.halfContainer .movieItem .column1 .poster:hover  .posterShade{
+    opacity:0.5;
+    visibility: visible;
+    transition:all 1s;
+  }
+  .halfContainer .movieItem .column1{
+    width:25%;
+}
+.halfContainer .movieItem .column2{
+    color: #fff;
+    width:70%;
+}
+.halfContainer .movieItem .column2 .fieldGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: center;
+    gap:5px;
+    width:100%;
+    gap:5px;
+    line-height: 40px;
+}
+.halfContainer .movieItem .column2 .fieldGroup .icon{
+    font-size: 17px;
+    color: #F8FF1E;
+    /* #F5C518; */
+    width:5%;
+}
+.halfContainer .movieItem .column2 .fieldGroup .lable{
+    font-size: 17px;
+    color: #fff;
+    white-space: nowrap;
+    width:20%;
+}
+.halfContainer .movieItem .column .fieldGroup .lableValues{
+    font-size: 17px;
+    color: #fff;
+}
+.halfContainer .movieItem .column2 .filmTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.halfContainer .movieItem .column2 .filmTitle .fieldGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap:30px;   
+}
+.halfContainer .movieItem .column2 .filmTitle .filmName{
+    width:60%;
+}
+.halfContainer .movieItem .column2 .filmTitle .filmImdb{
+    width:40%;
+}
+.halfContainer .movieItem .column1 .poster .playButton{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform:  transiton(-40%,-50%);
+    color: #fff;
+}
+
