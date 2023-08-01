@@ -23,6 +23,7 @@ export default function PanelMoviesByGenre(props){
                     setloading(false);                    
                   }
                   }
+                  
     function loopFilms() {
              return movies.map(function(movie) {
                 const {id , poster , title} = movie;

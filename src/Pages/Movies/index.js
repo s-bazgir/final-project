@@ -15,9 +15,7 @@ export default function Movies(){
     per_page:10,
     total_count:250
   }});
- // const [pageInfo, setPageInfo] = useState([]);
-
-  
+   
    function getApi(pageNumber = 1){
     setloading(true);  
       axios.get(`https://moviesapi.ir/api/v1/movies`, 
@@ -50,7 +48,7 @@ useEffect(function(){
     return (<Fragment>
              <Layout>
                 <div className="container">
-                  <ul>
+                  <ul className="films">
                     {loopFilms()}  
                   </ul>    
                   <div className="paging">             

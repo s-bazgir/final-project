@@ -7,7 +7,7 @@ export default function HomePage(){
 
     return (<Fragment>
              <Layout>
-               HomePage
+               {/* HomePage */}
                <Slider/>
                <PanelMoviesByGenre genreId="1" genreTitle="Crime" />
                <PanelMoviesByGenre genreId="7" genreTitle="Fantasy" />

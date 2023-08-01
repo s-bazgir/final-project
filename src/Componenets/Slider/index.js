@@ -2,11 +2,9 @@ import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "./style.css";
-
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -38,7 +36,7 @@ export default function Slider(){
               <SwiperSlide>
                 <li key={id}>                  
                     <Link to={`/singleMovie/${id}`}>
-                        <img src={poster} style={{width:"100%", height:"80vh", objectFit:"cover"}}/>
+                        <img src={poster} />
                     </Link>
                 </li>
               </SwiperSlide>
@@ -60,10 +58,12 @@ export default function Slider(){
       
       return(
           <Fragment>
+            <Link to={`/singleMovie/${id}`}>
               <li className="selectedMovieTitle">{title}</li>
               <li className="selectedMovieYear">Year: {year}</li>
               <li className="selectedMovieCountry">Country: {country}</li>
               <li className="selectedMovieGenres">Genres: {genres.join(",")}</li>
+            </Link>  
           </Fragment>
         );
     }
@@ -71,7 +71,7 @@ export default function Slider(){
   return (
     <div className="slide-movies-list">
       <div className="container">
-          <ul className="swiper-wrapper">
+          <ul className="swiper-holder">
             <Swiper
               modules={[Navigation, Pagination]}
               spaceBetween={50}

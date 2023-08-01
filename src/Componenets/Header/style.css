@@ -1,6 +1,5 @@
 .header{    
     background: #000;
-    height:65px;
     padding: 5px 0;
     color: #fff; 
     position: fixed;
@@ -13,7 +12,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 15px;
     align-items: center;
 }
 .header .topMenu a{
@@ -24,7 +23,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 .header .topMenu .filmMenu a:hover{
     color: #FFC90E;
@@ -49,23 +48,53 @@
     border-radius: 10px;
     padding: 5px 10px;
 }
-.header .topMenu .filmMenu .searchBox{
-    border-radius: 15px;
-    padding: 0 10px;
+.header .topMenu .filmMenu .searchPart{    
     position: relative;
 }
-.header .topMenu .filmMenu .searchResult{
+.header .topMenu .filmMenu .searchPart .searchBox{
+    border-radius: 15px;
+    padding: 0 10px;
+}
+.header .topMenu .filmMenu .searchPart .searchResult{
     position: absolute;
-    top:60px;
-    left:350px;
+    top:30px;
+    left:0px;
     text-align: center;
-    background: #DEE1E6;
-    width:150px;   
-    /* overflow-y: scroll; */
+    background: #A7AAAD;
+    width: 100%; 
+    max-width: 250px;  
+    overflow-y: auto;
+    max-height:90vh;
 }
-.header .topMenu .filmMenu .searchResult :nth-child(1){
-    margin-top: 15px;
+.header .topMenu .filmMenu .searchPart .searchResult :nth-child(1){
+    margin-top: 7px;
 }
-.header .topMenu .filmMenu .searchResult .eachReply img{
+.header .topMenu .filmMenu .searchPart .searchResult .eachReply img{
     object-fit: cover;
+    height:60px;
+    width:auto;
 }
+.header .topMenu .filmMenu .searchPart .searchResult .eachReply p{
+    margin: 5px 0;
+}
+/* @media all and (max-width: 1465px){
+    .topMenu{
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+} */
+@media all and (max-width: 620px) {
+    .header .topMenu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:10px;        
+        margin-bottom: 10px;
+    }
+    .header .topMenu .filmMenu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .accountMenu{
+        width:100%;
+    }
+  } 

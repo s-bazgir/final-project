@@ -1,35 +1,50 @@
 .slide-movies-list {
     margin-top: 50px;
-
 }
 .slide-movies-list ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.swiper-button-next:after,
-.swiper-button-prev:after
+.slide-movies-list .swiper-button-next:after,
+.slide-movies-list .swiper-button-prev:after
  {
-    background-color: #5E5E5E;    
-    color: #fff;
+    color: #fff;   
 }
-.slide-movies-list .swiper-wrapper{
+.slide-movies-list ul.swiper-holder{
     width:100%;
     background-color: #5E5E5E;
-    /* margin:0 auto; */
     padding: 10px 10px 20px 10px;
     border-radius: 10px;
+    margin-top: 70px;
+    height:80vh;
 }
-.slide-movies-list .swiper-wrapper li img{
-    /* border-radius: 10px; */
-    /* width:100%; */
-        height: 100%;
-        width: auto; /* اینجا عرض تصاویر به طور خودکار تنظیم می‌شود */
-        object-fit: cover;
-        border-radius: 10px;    
+.slide-movies-list .swiper-pagination-bullet-active{
+    background: aqua;
+    color:aqua;
 }
-.slide-movies-list .swiper-wrapper .selectedMovie{
+.slide-movies-list .swiper-holder .swiper{
+    height:90%;
+}
+.slide-movies-list .swiper-holder .selectedMovie{    
+    margin: 0px;
+}
+.slide-movies-list .swiper-holder .selectedMovie a{
+    text-decoration: none;
+    color:#fff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
+}
+.slide-movies-list .swiper-wrapper .selectedMovie a:hover{
+    color: #FFC90E;
+}
+.slide-movies-list .swiper-slide li a img{
+    width:100%;    
+}
+@media all and (max-width:620px){
+    .slide-movies-list{
+        margin-top: 90px;
+    }
 }

@@ -74,20 +74,21 @@ function makeSerachResultVisible(){
                      <Link to="/genres">Geners</Link>
                    </li>
                    <li>
-                     <input type="text" 
-                            className="searchBox" 
-                            placeholder="Please enter key words..."
-                            onChange={onSearch}>                       
-                     </input>
+                     <div className="searchPart">
+                      <input type="text" 
+                              className="searchBox" 
+                              placeholder="Please enter key words..."
+                              onChange={onSearch}>                       
+                      </input>
                       <ul className="searchResult">
                         {result.length === 0 ? emptySearchResult() : renderSearchResult()}
                       </ul> 
+                     </div> 
                    </li>
                  </ul>
              </li>
              <li>
                  <ul className="accountMenu">
-                   <li></li>
                    <li>
                      <Link to="/login" className="login">Enter / Register</Link>                      
                    </li>

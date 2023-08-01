@@ -1,27 +1,20 @@
 .holderAppDownload{
-    /* width:1200px; */
     height:300px;
     border-radius: 10px;
-    margin: 15px auto;
+    margin: 50px auto;
     background: #303030;
     position: relative;
     color: #fff;
-}
-.holderAppDownload .about{
-    position: absolute;
-    top:15px;
-    left:15px;
+    padding: 15px;  
+    display:flex;
+    flex-direction: column;
 }
 .holderAppDownload .downloadPart{
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    gap:20px;
-}
-.holderAppDownload .downloadPart{
-    position: absolute;
-    right: 20px;
-    bottom: 80px;
+    justify-content: flex-end;
+    gap:15px;
+    flex-wrap: nowrap;
 }
 .holderAppDownload .downloadPart div{
     padding:5px;
@@ -53,3 +46,6 @@
 .holderAppDownload .downloadPart .matn h4{
     margin: 0;
 }
+
+  
+

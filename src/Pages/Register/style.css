@@ -9,7 +9,6 @@
     align-items: center;
     padding: 15px;
 }
-
 .regular-btn{
     width:300px;
     background: #AAAAAA;
@@ -35,4 +34,9 @@ input{
 }
 .register-div h1{
     margin-bottom: 10px;
+}
+@media all and (max-width:650px){
+   .register-div{
+                width:90%;
+            }
 }

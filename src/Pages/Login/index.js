@@ -33,7 +33,7 @@ return(
                     <div>Password: </div>
                     <input id="Password" type="password"></input>
                 </div>         
-                <div class="line"></div>       
+                <div className="line"></div>       
                 <button id="enter-btn" className="regular-btn" onClick={signIn}>Sign In</button>                
                 <Link to="/Register">
                     <button id="register-btn" className="other-btn" >Register</button>

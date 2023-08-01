@@ -3,6 +3,7 @@ import  "./style.css";
 import { FaCalendar,FaFilm, FaGlobe, FaImdb, FaFileDownload, FaPlayCircle } from "react-icons/fa";
 
 export default function MovieItem(props){
+    
 
   const {id, title, poster, year, country, genres, imdb_rating} = props.movie;
   
@@ -23,8 +24,8 @@ export default function MovieItem(props){
                     <li className="filmImdb">
                         <ul className="fieldGroup">
                                 <li className="icon"><FaImdb /></li>
-                                <li className="lable">imdb_rate: </li>
-                                <li className="lableValues">{imdb_rating}</li>
+                                <li className="lable">imdb_rate:{imdb_rating} </li>
+                                {/* <li className="lableValues">{imdb_rating}</li> */}
                         </ul>
                     </li>
                 </ul>    
@@ -51,5 +52,6 @@ export default function MovieItem(props){
     </Fragment>
   );
 };
+
 
 

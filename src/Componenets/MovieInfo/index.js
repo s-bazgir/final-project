@@ -7,11 +7,10 @@ import { FaCalendar,FaFilm, FaClock, FaPeopleArrows, FaGlobe,
           } from "react-icons/fa";
 
 export default function MovieInfo(props){
-
   const [loading , setloading] = useState(false);
   const [movie , setMovie] = useState([]);
   const {id} = props;
- 
+   
   async function getApi(){
                   try{
                   setloading(true);  
@@ -25,8 +24,7 @@ export default function MovieInfo(props){
   
     useEffect(function(){                 
                     getApi();
-                },[id]);        
-   
+                },[id]); 
 
   return (
     <Fragment>
