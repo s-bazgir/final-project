@@ -90,6 +90,9 @@ function makeSerachResultVisible(){
              <li>
                  <ul className="accountMenu">
                    <li>
+                    <Link to="/buy" className="buy">Buy</Link>
+                   </li>
+                   <li>
                      <Link to="/login" className="login">Enter / Register</Link>                      
                    </li>
                  </ul>

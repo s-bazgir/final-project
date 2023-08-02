@@ -1,32 +1,19 @@
-// import { Fragment } from "react";
-// import Layout from '../../Componenets/Layout';
-// import { Link } from "react-router-dom";
 
-// export default function NotFound(){
-
-//     return (<Fragment>
-//              <Layout>
-//              NotFound
-//              </Layout>
-//            </Fragment>)
-// }
-
-import { Fragment, useEffect, useState } from "react";
-import Layout from '../../Componenets/Layout';
+import { Fragment } from "react";
 import  "./style.css";
-import MoviesByGenreInfinity from "../../Componenets/MoviesByGenreInfinity";
-
+import Header from "../../Componenets/Header";
+import Footer from "../../Componenets/Footer";
 
 export default function NotFound(){
 
-  return (
-    <Layout>
+  return (   
         <Fragment>
-            <div className="container">
-              <MoviesByGenreInfinity genreId='1' />
+           <Header />
+            <div className="notFound">
+              <img src="assets/images/notFound.jpg" />
             </div>
-        </Fragment>
-    </Layout>
+           <Footer />
+        </Fragment>   
   );
 };
 

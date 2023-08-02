@@ -7,7 +7,7 @@ export default function SellingCard(props){
   
   return (    
     <Fragment>
-         <div className="plan plan_popular">
+         <div className="plan_popular">
           <div className="card card_primary">
             <header className="card_header">
               <h3 className="plan_name">{plan_name}</h3>
@@ -22,7 +22,7 @@ export default function SellingCard(props){
                      <li id={index} className="list_item">{item}</li>
                   })}
                  </ul>
-                <button className="btn btn_outline btn_block">Buy Now</button>
+                <button className="btn btn_outline btn_block  btn_secondary">Buy Now</button>
             </div>
           </div>
          </div> 

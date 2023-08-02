@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap:15px;
+    gap:10px;
     flex-wrap: nowrap;
 }
 .holderAppDownload .downloadPart div{
@@ -45,6 +45,17 @@
 }
 .holderAppDownload .downloadPart .matn h4{
     margin: 0;
+}
+@media all and (max-width:540px){
+    .holderAppDownload .downloadPart{
+        gap:5px;
+        padding: 0;
+    }
+    
+    .holderAppDownload .downloadPart .matn{
+        margin:0;
+        padding: 0;
+    }
 }
 
   

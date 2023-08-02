@@ -1,11 +1,30 @@
-.plans{
+.sellCard .plans{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.plans .plans{
-    width:25%;
+.sellCard .plans .plan{
+    width:30%;
+    gap:15px;
 }
+@media all and (max-width:1250px){
+    .sellCard .plans .plan{
+        width:45%;
+        gap:15px;
+        margin-top: 20px;
+    }
+}
+@media all and (max-width:960px){
+    .sellCard .plans .plan{
+        width:70%;
+        margin-top: 40px;
+    }
+}
+  
+  
+   
+    
+  

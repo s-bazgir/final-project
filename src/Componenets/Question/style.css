@@ -1,0 +1,38 @@
+.expandpart{
+    color:#fff;
+    margin: 10px 10px ;
+    padding: 0 10px ;
+    border-radius: 2px;
+    text-align: center;
+}
+.expandpart .level{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;  
+    border: 1px solid #fff;
+    padding: 10px;
+  }
+  .expandpart .level p{
+    margin: 0;
+  }
+.expanded .level{
+  color:yellow;
+}
+.expandpart .rotateclass{
+  transform: rotate(45deg);
+}
+.expandpart .vrotateclass{
+  transform: rotate(0deg);
+}
+.expandpart .desc-expand{
+  display: block;
+  border: 1px solid #fff;
+  padding: 10px;
+  text-align: left;
+}
+.expandpart .desc-hide{
+  display: none;
+}
+ 

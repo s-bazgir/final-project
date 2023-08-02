@@ -9,6 +9,10 @@ import SingleGenre from './Pages/SingleGenre';
 import Search  from './Pages/Search';
 import Buy from './Pages/Buy';
 import NotFound from './Pages/NotFound';
+import FAQ from "./Pages/FAQ";
+import ContactUs from "./Pages/ContactUs";
+import SocialMedia from "./Pages/SocialMedia";
+
 
 const router = createBrowserRouter([
     {
@@ -47,6 +51,18 @@ const router = createBrowserRouter([
     path: "/buy",
     element: <Buy />,
   },  
+  {
+    path: "/faq",
+    element: <FAQ />,
+  },
+  {
+    path: "/contactUs",
+    element: <ContactUs />,
+  },
+  {
+    path: "/socialMedia",
+    element: <SocialMedia />,
+  },
   {path: "*",
    element: <NotFound />
   }

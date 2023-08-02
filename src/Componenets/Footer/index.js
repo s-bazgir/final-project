@@ -4,6 +4,7 @@ import  "./style.css";
 import { FaTwitter,FaInstagram,FaTelegram} from "react-icons/fa";
 
 
+
 export default function Footer(){
 
   return (
@@ -33,13 +34,13 @@ export default function Footer(){
             <li>
             <ul className="optionMenu">                    
                 <li>
-                  <Link to="/">Contact Us</Link>
+                  <Link to="/ContactUs">Contact Us</Link>
                 </li>
                 <li>
-                  <Link to="/">FAQ</Link>
+                  <Link to="/FAQ">FAQ</Link>
                 </li>
                 <li>
-                  <Link to="/">Social Media</Link>
+                  <Link to="/SocialMedia">Social Media</Link>
                 </li>                    
               </ul>
             </li>

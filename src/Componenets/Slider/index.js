@@ -28,7 +28,6 @@ export default function Slider(){
                      }catch(e){                  
                   }
                   }
-
     function loopFilms() {
       return movies.map(function(movie) {
           const {id, poster} = movie;

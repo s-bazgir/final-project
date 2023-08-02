@@ -6,6 +6,9 @@
     overflow-x: scroll;
     position: relative;
 } 
+.moviePanel .filmList::-webkit-scrollbar{
+    background-color: #5E5E5E;
+}
 .moviePanel .filmList li{
     width: 14.5%;
     padding: 15px 15px;
@@ -54,8 +57,15 @@
     position: absolute;
     bottom: 0;
     left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 20px;
+}     
+.moviePanel .filmList .singleMovie .movieImageHolder .movieShade .shadeInfo li{
+    width:100%;
+    padding: 0 0 5px 5px;
 }
-      
 @media all and (min-width:500px){
     .moviePanel .filmList li{
         width: 55%;

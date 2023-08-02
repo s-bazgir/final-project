@@ -47,7 +47,7 @@ export default function MovieInfo(props){
                     <li className="icon"><FaFilm /></li>
                     <li className="lable">Genre: </li>
                     <li className="lableValues">
-                          {/* {movie.genres.join(",")} */}
+                          {movie.genres?  movie.genres.join(","): ""}
                     </li>               
                 </ul>
                 <ul className="fieldGroup">

@@ -24,7 +24,7 @@
     color:aqua;
 }
 .slide-movies-list .swiper-holder .swiper{
-    height:90%;
+    height:87%;
 }
 .slide-movies-list .swiper-holder .selectedMovie{    
     margin: 0px;
@@ -48,3 +48,4 @@
         margin-top: 90px;
     }
 }
+
