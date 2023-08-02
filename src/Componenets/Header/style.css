@@ -87,7 +87,7 @@
         margin-left: 2px;
     }
 } */
-@media all and (max-width: 620px) {
+@media all and (max-width: 660px) {
     .header .topMenu{
         flex-wrap: wrap;
         justify-content: center;

@@ -137,6 +137,12 @@
         width:60%;
     }
 }
+@media all and (max-width:660px){
+    .halfContainer .movieItem{
+         height:400px;
+         margin-bottom: 50px;
+    }
+}
 @media all and (max-width:620px){
 .halfContainer{
     margin-top: 40px;

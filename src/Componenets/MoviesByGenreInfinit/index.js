@@ -1,13 +1,14 @@
-import { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Link , useParams } from "react-router-dom";
 import  "./style.css";
 import axios from "axios";
 import  InfiniteScroll  from "react-infinite-scroll-component";
+import MovieItem from '../../Componenets/MovieItem';
 
-export default function MoviesByGenreInfinity(props){
+
+export default function MoviesByGenreInfinit(props){
 
     const genreId = props.genreId;
-    
     const [movies , setMovies] = useState([]);
     const [hasMore, setHasMore] = useState(true);
     const [pageNumber , setPageNumber] = useState(1);
@@ -25,7 +26,7 @@ export default function MoviesByGenreInfinity(props){
                         setLen(response.data.metadata.total_count);
                         setMovies(mergedArray);                      
                         setPageNumber(pageNumber+1);
-                        console.log(len);
+                        console.log(movies[1]);
                         if(response.data.data.length === 0 )
                            setHasMore(false);
                             }catch(e){    
@@ -34,31 +35,21 @@ export default function MoviesByGenreInfinity(props){
                       }
         return(        
         <Fragment>                           
-            <div>
-                <InfiniteScroll 
-                  dataLength={len}
-                  next={getApi}
-                  hasMore={hasMore}
-                  loader = {<h4> loading ... </h4>}
-                  endMessage={<p>no more items ..</p>}
-                  >
-                    <ul>
-                       {movies.map((item, index) => (
-                        <li>
-                          <Link to={`/SingleMovie/${item.id}`} className="singleMovie">
-                            <div className="movieImageHolder"> 
-                                {/* <img src={item.poster} /> */}
-                                <div className="movieShade">                                  
-                                </div>  
-                            </div>
-                            <h4>{index} . </h4>
-                            {/* <h4>{item.title}</h4> */}
-                          </Link>
-                        </li>
-                       ))}
-                    </ul>
-                  </InfiniteScroll>
+            <div className="content">                
+                <ul className="genreFilmList">
+                    {movies.map((item, index) => (
+                    <li className="singleGenreFilmList" key={index}>
+                        <Link to={`/SingleMovie/${item.id}`} className="singleMovie">
+                          <MovieItem movie={item} />
+                        </Link>
+                    </li>
+                    ))}
+                </ul>
+                <div className="buttonHolder">
+                    <button onClick={getApi} className="load-more regular-btn">{hasMore ? "load more" : "no more items"}</button>
+                </div>
             </div>
+
         </Fragment>
     )      
     }

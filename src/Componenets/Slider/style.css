@@ -13,7 +13,7 @@
 }
 .slide-movies-list ul.swiper-holder{
     width:100%;
-    background-color: #5E5E5E;
+    background-color: #454545;
     padding: 10px 10px 20px 10px;
     border-radius: 10px;
     margin-top: 70px;
@@ -43,7 +43,7 @@
 .slide-movies-list .swiper-slide li a img{
     width:100%;    
 }
-@media all and (max-width:620px){
+@media all and (max-width:660px){
     .slide-movies-list{
         margin-top: 90px;
     }

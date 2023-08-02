@@ -4,7 +4,6 @@ import { FaCalendar,FaFilm, FaGlobe, FaImdb, FaFileDownload, FaPlayCircle } from
 
 export default function MovieItem(props){
     
-
   const {id, title, poster, year, country, genres, imdb_rating} = props.movie;
   
   return (
