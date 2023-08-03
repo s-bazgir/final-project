@@ -45,10 +45,10 @@ export default function SingleMovie(props){
                 </SwiperSlide>;
         } 
        else{   
-      return movie.images.map(function(movieImage) {          
+      return movie.images.map(function(movieImage, index) {          
           return (
               <SwiperSlide>
-                <li>
+                <li key={index}>
                     <img src={movieImage} style={{width:"100%", height:"80vh", objectFit:"cover"}}/>
                 </li>
               </SwiperSlide>

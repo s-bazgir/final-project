@@ -44,7 +44,7 @@ export default function MoviesByGenreInfinity(props){
                   >
                     <ul>
                        {movies.map((item, index) => (
-                        <li>
+                        <li key={index}>
                           <Link to={`/SingleMovie/${item.id}`} className="singleMovie">
                             <div className="movieImageHolder"> 
                                 {/* <img src={item.poster} /> */}

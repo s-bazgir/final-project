@@ -26,7 +26,6 @@ export default function MoviesByGenreInfinit(props){
                         setLen(response.data.metadata.total_count);
                         setMovies(mergedArray);                      
                         setPageNumber(pageNumber+1);
-                        console.log(movies[1]);
                         if(response.data.data.length === 0 )
                            setHasMore(false);
                             }catch(e){    

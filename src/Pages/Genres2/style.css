@@ -1,0 +1,13 @@
+.genreList{
+    margin-bottom: 10px;
+}
+.content{
+    width:100%;
+    height:1000px;
+}
+@media all and (max-width:660px){
+    .genreList{
+        margin-top: 1000px;
+    }
+    
+}
