@@ -11,7 +11,7 @@ export default function SingleGenre(){
     return (<Fragment>
              <Layout>
                 <div className="container">
-                  <MoviesByGenreInfinit genreId={id} />
+                    <MoviesByGenreInfinit genreId={id} />
                 </div>
              </Layout>
            </Fragment>)

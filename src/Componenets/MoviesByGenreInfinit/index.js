@@ -34,7 +34,7 @@ export default function MoviesByGenreInfinit(props){
                       }
         return(        
         <Fragment>                           
-            <div className="content">                
+            <div className="moviesByGenreInfinit">                
                 <ul className="genreFilmList">
                     {movies.map((item, index) => (
                     <li className="singleGenreFilmList" key={index}>

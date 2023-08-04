@@ -1,3 +1,24 @@
-h4{
-    color:yellow;
+.genreFilmList{
+    margin-bottom: 90px;
+}
+.buttonHolder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+.regular-btn{    
+    width:300px;
+    background: #AAAAAA;
+    color: #fff;
+    border: none;
+    padding: 10px ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.regular-btn:hover{ 
+    color: #FFC90E;
+}
+.moviesByGenreInfinit{
+ margin-bottom: 90px;   
 }

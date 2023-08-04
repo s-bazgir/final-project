@@ -1,4 +1,4 @@
-.holderAppDownload{
+.appDownload .holderAppDownload{
     height:300px;
     border-radius: 10px;
     margin: 50px auto;
@@ -9,50 +9,50 @@
     display:flex;
     flex-direction: column;
 }
-.holderAppDownload .downloadPart{
+.appDownload .holderAppDownload .downloadPart{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     gap:10px;
     flex-wrap: nowrap;
 }
-.holderAppDownload .downloadPart div{
+.appDownload .holderAppDownload .downloadPart div{
     padding:5px;
     border-radius: 10px;
     background-color: #37383E;
 }
-.holderAppDownload .downloadPart a{
+.appDownload .holderAppDownload .downloadPart a{
     text-decoration: none;
     color: #fff;
 }
-.holderAppDownload .downloadPart div img{
+.appDownload .holderAppDownload .downloadPart div img{
     width:40px;
     height:40px;
 }
-.holderAppDownload .downloadPart .ax-matn{
+.appDownload .holderAppDownload .downloadPart .ax-matn{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 3px;
 }
-.holderAppDownload .downloadPart .matn{
+.appDownload .holderAppDownload .downloadPart .matn{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 3px;
 }
-.holderAppDownload .downloadPart .matn h4{
+.appDownload .holderAppDownload .downloadPart .matn h4{
     margin: 0;
 }
 @media all and (max-width:540px){
-    .holderAppDownload .downloadPart{
+    .appDownload .holderAppDownload .downloadPart{
         gap:5px;
         padding: 0;
     }
     
-    .holderAppDownload .downloadPart .matn{
+    .appDownload .holderAppDownload .downloadPart .matn{
         margin:0;
         padding: 0;
     }
