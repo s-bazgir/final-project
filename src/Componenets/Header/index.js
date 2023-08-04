@@ -54,6 +54,27 @@ function makeSerachResultVisible(){
   return;
 }
 
+function handleChangeTheme(){
+  const themSite=localStorage.getItem("themSite");
+    
+  const root = document.documentElement;
+   
+  if(themSite){
+              if (themSite === "1") {
+                root.style.setProperty("--background-color", "yellow");
+                localStorage.setItem("themSite" , "2");
+              } else if (themSite === "2") {
+                root.style.setProperty("--background-color", "red");
+                localStorage.setItem("themSite" , "1");
+              }
+            }
+  else{
+    localStorage.setItem("themSite" , "1");
+   }
+ 
+
+}
+
   return (
     <Fragment>        
      <div className="header">
@@ -91,6 +112,9 @@ function makeSerachResultVisible(){
                  <ul className="accountMenu">
                    <li>
                     <Link to="/buy" className="buy">Buy</Link>
+                   </li>
+                   <li>
+                     <button className="changeThemeBtn" onClick={handleChangeTheme}>changeTheme</button>                      
                    </li>
                    <li>
                      <Link to="/login" className="login">Enter / Register</Link>                      

@@ -2,9 +2,9 @@
     height:300px;
     border-radius: 10px;
     margin: 50px auto;
-    background: #303030;
+    background: var(--app-background-app-holder);
     position: relative;
-    color: #fff;
+    color: var(--color-font);
     padding: 15px;  
     display:flex;
     flex-direction: column;
@@ -19,11 +19,11 @@
 .appDownload .holderAppDownload .downloadPart div{
     padding:5px;
     border-radius: 10px;
-    background-color: #37383E;
+    background-color: var(--download-background-color);
 }
 .appDownload .holderAppDownload .downloadPart a{
     text-decoration: none;
-    color: #fff;
+    color: var(--color-font);
 }
 .appDownload .holderAppDownload .downloadPart div img{
     width:40px;

@@ -43,9 +43,18 @@
 .slide-movies-list .swiper-slide li a img{
     width:100%;    
 }
+.yy  img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.yy{
+    /* width:60vw; */
+    margin: 0 auto;
+}
 @media all and (max-width:660px){
     .slide-movies-list{
-        margin-top: 90px;
+        margin-top: 100px;
     }
 }
 

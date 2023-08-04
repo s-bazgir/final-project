@@ -1,8 +1,9 @@
 .footer{    
-    background: #000;
+    background: var(--background-color);
+     /* #000; */
     height:40px;
     padding: 10px 0;
-    color: #fff;
+    color: var(--color-font);
     width:100%;
     position: fixed;
     bottom:0;
@@ -19,10 +20,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: #fff;
+    color: var(--color-font);
+     /* #fff; */
     gap:20px;
     margin-right: 40px;
-    background: #000;
+    background: var(--background-color);
+     /* #000; */
 }
 .footer .bottomMenu  .optionMenu{
     display: flex;
@@ -31,10 +34,11 @@
     gap:20px;
 }
 .footer .bottomMenu a{
-    color: #fff;
+    color: var(--color-font);
 }
 .footer .bottomMenu a:hover{
-    color: #FFC90E;
+    color: var(--color-hover);
+     /* #FFC90E; */
 }
 @media all and  (max-width: 1400px) {  
     .footer .bottomMenu{

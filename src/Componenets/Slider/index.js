@@ -28,14 +28,21 @@ export default function Slider(){
                      }catch(e){                  
                   }
                   }
+
     function loopFilms() {
       return movies.map(function(movie) {
           const {id, poster} = movie;
           return (
               <SwiperSlide>
                 <li key={id}>                  
-                    <Link to={`/singleMovie/${id}`}>
-                        <img src={poster} />
+                    <Link to={`/singleMovie/${id}`}> 
+                      <div className="yy">   
+                        {/* <img src="assets/images/poster4.jpg"   />    */}
+                        <img src={`assets/images/poster${id}.jpg`}  />             
+                        {/* <img src={poster}  /> */}
+                        {/* <div className="yy" style={{backgroundImage: `url(${poster})`}}>
+                        </div> */}
+                      </div>  
                     </Link>
                 </li>
               </SwiperSlide>

@@ -1,3 +1,28 @@
+:root{
+  --background-color : #000;
+  --download-background-color : #37383E;
+  --app-background-app-holder : #303030;
+  --color-hover : #FFC90E;
+  --color-font : #fff;
+  --color-search-result : #A7AAAD;
+  --color-serarch-result-active:  aliceblue;
+  --color-movie-panel: #2B2B2B;
+  --color-title-icon:  aquamarine;
+  --color-movieDetail-hover:  #242424;
+  --color-fieldgroup : #F8FF1E;
+  --color-load-more: #AAAAAA;
+  --color-scroll : #5E5E5E;
+  --color-sellCard-second: #00A2E8;
+  --color-card-shadow:  #f3f3f3;
+  --color-badge-second: #02cdf1;
+  --color-sellCrad:hover: #fd4516;
+  --color-sellCard-second-hover: #00c8eb;
+  --color-swiper-holder : #454545;
+  --color-bullet: aqua;
+  --color-contact-us: #0B57CD;
+  --color-other-btn:  #99D9EA;
+  --color-register-div:  #222327;}
+
 .App {
   text-align: center;
 }
@@ -14,7 +39,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color:var(--background-color);
+   /* xxx #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;

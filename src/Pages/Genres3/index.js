@@ -20,37 +20,38 @@ export default function Genres2(){
                       }
                     }
   
-    useEffect(function(){   
-      
-      var we= localStorage.getItem("genre");
-      if(!we){
-      localStorage.setItem("genre",1);
-      }
+    useEffect(function(){                 
         getApi();
         },[]);   
         
-    useEffect(() => {
-      console.log("Selected Genre changed: ", selectedGenre);          
-    }, [selectedGenre]);
+    // useEffect(() => {
+    //   console.log("Selected Genre changed: ", selectedGenre);          
+    // }, [selectedGenre]);
         
      function handleGenreSelect(genre){
         setselectedGenre(genre);  
-        localStorage.setItem("genre",genre.id);
        }
-   
+       function loopItems() {
+        return(
+             genres.map(function(item) {
+              return(<li onClick={handleGenreSelect}
+                         key={item.id}
+                         className={item === selectedGenre? "list-group-item active" : "list-group-item"}
+                      >{item.name}</li>)
+                  }
+              )
+        );
+       }   
     return (<Fragment>
              {/* <Layout> */}
               <div className="allGenresMovies">
                 <div className="genreList">
-                  <ListGroup items={genres}
-                              selectedItem={selectedGenre}  // برای رد و بدل داده بین دو کامپوننت است
-                              onItemSelect={handleGenreSelect} // اسم متد را به کامپوننت ارسال کردم تا در صورت کلیک اینجا را صدا بزند
-                              textProperty = "name" // یک لیست داریم کهه در بیشتر موافع فیلدهای آن نام و شناسه است اما چون ممکن است فرق داشته باشد ما اسم فیلدها را هم پرارامتریزه کردیم
-                              valueProperty = "id"
-                      />        
+                    <ul className="list-group">
+                    {loopItems()}           
+                    </ul>        
                 </div>
                 <div className="hello">
-                  <MoviesByGenreInfinit genreId={localStorage.getItem("genre")} />
+                  <MoviesByGenreInfinit genreId={selectedGenre.id} />
                 </div>
               </div>
              {/* </Layout> */}

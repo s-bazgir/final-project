@@ -1,5 +1,6 @@
 .header{    
-    background: #000;
+    background: var(--background-color);
+      /* #000; */
     padding: 5px 0;
     color: #fff; 
     position: fixed;
@@ -16,7 +17,8 @@
     align-items: center;
 }
 .header .topMenu a{
-    color: #fff;
+    color: var(--color-font);
+     /* #fff; */
 }
 .header .topMenu .filmMenu{
     display: flex;
@@ -26,7 +28,8 @@
     gap: 10px;
 }
 .header .topMenu .filmMenu a:hover{
-    color: #FFC90E;
+    color: var(--color-hover);
+    /* #FFC90E; */
 }
 .header .topMenu .filmMenu img{
     width:80px;
@@ -44,8 +47,10 @@
     border-radius: 10px;
 }
 .header .topMenu .accountMenu .login:hover{
-    color:#000;
-    background: #fff;
+    color:var(--background-color);
+    /* #000; */
+    background: var(--color-font);
+     /* #fff; */
     border-radius: 10px;
     padding: 5px 10px;
 }
@@ -61,7 +66,8 @@
     top:30px;
     left:0px;
     text-align: center;
-    background: #A7AAAD;
+    background: var(--color-search-result);
+     /* #A7AAAD; */
     width: 100%; 
     max-width: 250px;  
     overflow-y: auto;
