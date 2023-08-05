@@ -9,6 +9,12 @@
     width:100%;  
     z-index: 2;
 }
+.changeThemeBtn{
+    border: none;
+    background-color: var(--background-color);
+    color: var(--color-font);
+    padding: 2px;
+}
 .header .topMenu{
     display: flex;
     flex-direction: row;

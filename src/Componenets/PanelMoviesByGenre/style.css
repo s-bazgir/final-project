@@ -7,7 +7,8 @@
     position: relative;
 } 
 .moviePanel .filmList::-webkit-scrollbar{
-    background-color: #5E5E5E;
+    background-color: var(--color-scroll);
+     /* #5E5E5E; */
 }
 .moviePanel .filmList li{
     width: 14.5%;
@@ -23,10 +24,12 @@
 }
 .moviePanel .genreTitle, 
 .moviePanel .filmList .singleMovie{
-    color: #fff;
+    color: var(--color-font);
+     /* #fff; */
 }
 .moviePanel .filmList .singleMovie:hover{
-    color: #FFC90E;
+    color: var(--color-hover);
+    /* #FFC90E; */
 }
 .moviePanel .filmList .singleMovie h4{
     width:170px;
@@ -39,10 +42,12 @@
           position:absolute;
           top:0;
           right:0;
-          color:#FFFFFF;
+          color: var(--color-font);
+          /* #FFFFFF; */
           opacity: 0;
           visibility: hidden;
-          background-color: #000000;
+          background-color: var(--background-color);
+           /* #000000; */
           padding-right: 10px;
           width:100%;
           height:100%;
@@ -66,6 +71,12 @@
     width:100%;
     padding: 0 0 5px 5px;
 }
+/* @media all and (min-width:800px){
+    .moviePanel{
+    height:500px !important;
+    margin-bottom: 50px;
+    }
+} */
 @media all and (min-width:500px){
     .moviePanel .filmList li{
         width: 55%;

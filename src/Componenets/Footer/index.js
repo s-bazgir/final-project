@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import  "./style.css";
-import { FaTwitter,FaInstagram,FaTelegram} from "react-icons/fa";
+import { FaTwitter,FaInstagram,FaTelegram, FaMoon, FaLightbulb} from "react-icons/fa";
 
 
 
@@ -17,7 +17,7 @@ export default function Footer(){
             <ul className="socailMenu">
                 <li>
                 <Link to={`/???`}>
-                  <FaInstagram />
+                  <FaInstagram />                  
                 </Link>                    
                 </li>
                 <li>

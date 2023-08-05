@@ -1,5 +1,6 @@
 .expandpart{
-    color:#fff;
+    color: var(--color-font);
+    /* #fff; */
     margin: 10px 10px ;
     padding: 0 10px ;
     border-radius: 2px;
@@ -11,14 +12,15 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;  
-    border: 1px solid #fff;
+    border: 1px solid  var(--color-font);
+     /* #fff; */
     padding: 10px;
   }
   .expandpart .level p{
     margin: 0;
   }
 .expanded .level{
-  color:yellow;
+  color:var(--color-hover);
 }
 .expandpart .rotateclass{
   transform: rotate(45deg);
@@ -28,7 +30,8 @@
 }
 .expandpart .desc-expand{
   display: block;
-  border: 1px solid #fff;
+  border: 1px solid var(--color-font);
+   /* #fff; */
   padding: 10px;
   text-align: left;
 }

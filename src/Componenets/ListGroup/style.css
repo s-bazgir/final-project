@@ -1,6 +1,7 @@
 .list-group{
     background-color: antiquewhite;
-    color: #fff;
+    color: var(--color-font);
+     /* #fff; */
     border: 1px solid #fff;
     max-height:80vh;
     position: fixed;
@@ -10,14 +11,18 @@
     overflow-y: auto;
 }
 .list-group .list-group-item{
-    background-color: #303030;
-    color: #fff;
-    border: 1px solid #fff;
+    background-color: var(--app-background-app-holder);
+     /* #303030; */
+    color:var(--color-font);
+     /* #fff; */
+    border: 1px solid var(--color-font);
+     /* #fff; */
     padding: 10px 10px;
     text-align: center;
     cursor: pointer;
 }
 .list-group .active{
     background-color: aliceblue;
-    color: #000;
+    color: var(--background-color);
+     /* #000; */
 }

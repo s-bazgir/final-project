@@ -25,14 +25,17 @@
 .content .buttonHolder .load-more{
     cursor: pointer;    
     width:300px;
-    background: #AAAAAA;
-    color: #fff;
+    background: var(--color-load-more);
+     /* #AAAAAA; */
+    color: var(--color-font);
+     /* #fff; */
     border: none;
     padding: 10px ;
     border-radius: 10px;
 }
 .content .buttonHolder .load-more:hover{
-    color: #FFC90E;
+    color: var(--color-hover);
+     /* #FFC90E; */
 }
 @media all and (max-width:1320px){
     .content .genreFilmList{

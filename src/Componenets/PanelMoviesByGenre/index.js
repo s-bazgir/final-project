@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import  "./style.css";
 import axios from "axios";
 
-
 export default function PanelMoviesByGenre(props){
     
     const [loading , setloading] = useState(false);

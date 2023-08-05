@@ -12,7 +12,7 @@ import NotFound from './Pages/NotFound';
 import FAQ from "./Pages/FAQ";
 import ContactUs from "./Pages/ContactUs";
 import SocialMedia from "./Pages/SocialMedia";
-import Test from "./Pages/Test";
+
 
 
 const router = createBrowserRouter([
@@ -48,10 +48,6 @@ const router = createBrowserRouter([
    path: "/search",
    element: <Search />,
   },
-  {
-    path: "/test",
-    element: <Test />,
-   },
   {
     path: "/buy",
     element: <Buy />,

@@ -1,6 +1,8 @@
 :root{
-    --color-primary: #FFC90E;
-    --color-secondary: #00A2E8; 
+    --color-primary: var(--color-hover);
+     /* #FFC90E; */
+    --color-secondary: var(--color-sellCard-second);
+     /* #00A2E8;  */
 }
 .card{
     border-radius:  7px;
@@ -12,23 +14,30 @@
 .card_body{
     padding: 2rem 3rem;
 }
+.card_body{
+    background-color:  var(--app-background-app-holder);
+}
 .card_primary .card_header{
     background: var(--color-primary) ;
-    color:#fff;
+    color: var(--color-font);
+    /* #fff; */
 }
 .card_secondary .card_header{
     background: var(--color-secondary) ;
-    color:#fff;
+    color: var(--color-font);
+    /* #fff; */
 }
 .card_secondary .badge_secondary{
-    background: #02cdf1;
+    background: var(--color-sellCard-second);
+     /* #02cdf1; */
 }
 .badge_small{
     font-size: 1.6rem;
     padding: 0.5rem;
 }
 .plan_name{
-    color:#fff;
+    color: var(--color-font);
+    /* #fff; */
     margin: 0;
     font-weight: 500;
     font-size: 2.4rem;
@@ -71,11 +80,13 @@
 }
 .badge_secondary{
     background: var(--color-secondary);
-    color:#fff;
+    color:var(--color-font); 
+    /* #fff; */
 }
 .badge_primary{
     background: var(--color-primary);
-    color:#fff;
+    color: var(--color-font);
+    /* #fff; */
 }
 .badge_small{
     font-size: 1.6rem;
@@ -102,18 +113,22 @@
 }
 .btn_primary{
     background: var(--color-primary);
-    color: #fff;
+    color: var(--color-font);
+    /* #fff; */
 }
 .btn_primary:hover{
-    background: #fd4516;
+    background: var(--color-sellCrad-hover);
+     /* #fd4516; */
 }
 /* .btn_secondary{
     background: var(--color-secondary);
     color: #fff;
 } */
 .btn_secondary:hover{
-    background: #00c8eb;
-    color: #fff;
+    background:  var(--color-sellCard-second-hover);
+     /* #00c8eb; */
+    color: var(--color-font); 
+    /* #fff; */
 }
 .btn_block{
     width:100%;

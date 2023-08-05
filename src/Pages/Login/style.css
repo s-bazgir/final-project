@@ -1,8 +1,10 @@
 .enter-div{
     width:600px;
     margin: 150px auto;
-    background-color: #222327;
-    color: #fff;
+    background-color: var(--color-register-div);
+     /* #222327; */
+    color: var(--color-font);
+     /* #fff; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,15 +14,18 @@
 }
 .regular-btn{
     width:300px;
-    background: #AAAAAA;
+    background: var(--color-load-more);
+     /* #AAAAAA; */
 }
 .other-btn{
     width:300px;
-    background: #99D9EA;
+    background: var(--color-other-btn);
+     /* #99D9EA; */
 }
 #enter-btn,
 #register-btn{
-    color: #fff;
+    color: var(--color-font);
+     /* #fff; */
     border: none;
     padding: 10px ;
     border-radius: 10px;
@@ -36,7 +41,8 @@ input{
 .line{
     height:3px;
     width:100%;
-    background-color: #fff;
+    background-color: var(--color-font);
+     /* #fff; */
 }
 @media all and (max-width: 600px){
     .enter-div{

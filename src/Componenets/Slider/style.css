@@ -9,11 +9,13 @@
 .slide-movies-list .swiper-button-next:after,
 .slide-movies-list .swiper-button-prev:after
  {
-    color: #fff;   
+    color: var(--color-font);
+     /* #fff;    */
 }
 .slide-movies-list ul.swiper-holder{
     width:100%;
-    background-color: #454545;
+    background-color: var(--color-swiper-holder);
+     /* #454545; */
     padding: 10px 10px 20px 10px;
     border-radius: 10px;
     margin-top: 70px;
@@ -24,37 +26,71 @@
     color:aqua;
 }
 .slide-movies-list .swiper-holder .swiper{
-    height:87%;
+    height:85%;
 }
 .slide-movies-list .swiper-holder .selectedMovie{    
     margin: 0px;
 }
 .slide-movies-list .swiper-holder .selectedMovie a{
     text-decoration: none;
-    color:#fff;
+    color: var(--color-font);
+        /* #fff; */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px;
 }
 .slide-movies-list .swiper-wrapper .selectedMovie a:hover{
-    color: #FFC90E;
+    color: var(--color-hover);
+     /* #FFC90E; */
 }
 .slide-movies-list .swiper-slide li a img{
     width:100%;    
 }
-.yy  img{
+.sliderPoster  img{
     width:100%;
     height: 100%;
     object-fit: cover;
 }
-.yy{
+.sliderPoster{
     /* width:60vw; */
     margin: 0 auto;
 }
-@media all and (max-width:660px){
-    .slide-movies-list{
-        margin-top: 100px;
+@media all and (max-width:770px){
+    .slide-movies-list .swiper-holder .swiper{
+        height:80%;
+    }    
+    .slide-movies-list ul.swiper-holder{
+        height:470px;
     }
 }
+@media all and (max-width:660px){
+    .slide-movies-list{
+        margin-top: 100px;       
+    }
+    .slide-movies-list .swiper-holder .swiper{
+        height:80%;
+    }    
+    .slide-movies-list ul.swiper-holder{
+        height:430px;
+    }
+}
+
+@media all and (max-width:620px){
+    .slide-movies-list .swiper-holder .swiper{
+        height:80%;
+    }    
+    .slide-movies-list ul.swiper-holder{
+        height:400px;
+    }
+}
+@media all and (max-width:560px){
+    .slide-movies-list .swiper-holder .swiper{
+        height:80%;
+    }    
+    .slide-movies-list ul.swiper-holder{
+        height:360px;
+    }
+}
+
 

@@ -20,7 +20,7 @@ export default function Slider(){
   useEffect(function(){                 
                       getApi();
                   },[]); 
-
+                  
   async function getApi(){
                   try{
                   const response = await axios.get("https://moviesapi.ir/api/v1/movies");
@@ -36,7 +36,7 @@ export default function Slider(){
               <SwiperSlide>
                 <li key={id}>                  
                     <Link to={`/singleMovie/${id}`}> 
-                      <div className="yy">   
+                      <div className="sliderPoster">   
                         {/* <img src="assets/images/poster4.jpg"   />    */}
                         <img src={`assets/images/poster${id}.jpg`}  />             
                         {/* <img src={poster}  /> */}

@@ -3,8 +3,10 @@
     border-radius: 10px;
     margin: 50px auto;
     background: var(--app-background-app-holder);
+    /* #303030; */
     position: relative;
     color: var(--color-font);
+    /* #FFF; */
     padding: 15px;  
     display:flex;
     flex-direction: column;

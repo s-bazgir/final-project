@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect } from 'react';
+import icon1 from '../src/assets/images/icon1.png';
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={icon1} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
