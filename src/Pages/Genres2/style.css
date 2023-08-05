@@ -1,11 +1,87 @@
-.allGenresMovies{
+.moviePanel .filmList{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    position: relative;
+} 
+.moviePanel .filmList::-webkit-scrollbar{
+    background-color: var(--color-scroll);
+     /* #5E5E5E; */
+}
+.moviePanel .filmList li{
+    width: 14.5%;
+    padding: 15px 15px;
+}
+.moviePanel .filmList li img{
+    border-radius: 10px;
+    height:250px;
+    width: auto;
+}
+.moviePanel .genreTitle{
+    padding-left: 15px;   
+}
+.moviePanel .genreTitle, 
+.moviePanel .filmList .singleMovie{
+    color: var(--color-font);
+     /* #fff; */
+}
+.moviePanel .filmList .singleMovie:hover{
+    color: var(--color-hover);
+    /* #FFC90E; */
+}
+.moviePanel .filmList .singleMovie h4{
+    width:170px;
+    text-align: center;
+}
+.moviePanel .filmList .singleMovie .movieImageHolder{
+    position: relative;
+}
+.moviePanel .filmList .singleMovie .movieImageHolder .movieShade{
+          position:absolute;
+          top:0;
+          right:0;
+          color: var(--color-font);
+          /* #FFFFFF; */
+          opacity: 0;
+          visibility: hidden;
+          background-color: var(--background-color);
+           /* #000000; */
+          padding-right: 10px;
+          width:100%;
+          height:100%;
+          transition: all 1s;  
+}
+.moviePanel .filmList .singleMovie .movieImageHolder:hover .movieShade{
+          opacity:0.8;
+          visibility: visible;
+          transition:all 1s;
+        }
+.moviePanel .filmList .singleMovie .movieImageHolder .movieShade .shadeInfo{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 20px;
+}     
+.moviePanel .filmList .singleMovie .movieImageHolder .movieShade .shadeInfo li{
     width:100%;
-    height:1000px;
+    padding: 0 0 5px 5px;
+}
+/* @media all and (min-width:800px){
+    .moviePanel{
+    height:500px !important;
+    margin-bottom: 50px;
+    }
+} */
+@media all and (min-width:500px){
+    .moviePanel .filmList li{
+        width: 55%;
+    }
 }
 
-@media all and (max-width:660px){
-    .genreList{
-        margin-top: 1000px;
-    }
-    
-}
+
+

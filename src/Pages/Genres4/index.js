@@ -6,7 +6,7 @@ import  "./style.css";
 import ListGroup from '../../Componenets/ListGroup';
 import { Link  } from "react-router-dom";
 
-export default function Genres2(){
+export default function Genres4(){
  
     const [genres , setGenres] = useState([]);
     const [selectedGenre, setselectedGenre] = useState([{id:1 , name: "Crime"}]);
@@ -18,8 +18,7 @@ export default function Genres2(){
                       try{
                       const response = await axios.get(`https://moviesapi.ir/api/v1/genres`);                  
                       setGenres(response.data);
-                      }catch(e){   
-                                        
+                      }catch(e){                                           
                       }
                     }
 
@@ -90,31 +89,39 @@ export default function Genres2(){
                }
            )
          }
-   
+
+         function renderGenre(){
+          return(
+            genres.map(function(item) {
+             return(<li onClick = { handleGenreSelect }
+                        key={item.id}
+                        className={item === selectedGenre ? "list-group-item active" : "list-group-item"}
+                     >{item.name}</li>)
+                 }
+             )
+                   );      
+         }
+
     return (<Fragment>
              <Layout>
-              <div className="allGenresMovies">
-                <div className="genreList">
-                  <ListGroup items={genres}
-                              selectedItem={selectedGenre}  // برای رد و بدل داده بین دو کامپوننت است
-                              onItemSelect={handleGenreSelect} // اسم متد را به کامپوننت ارسال کردم تا در صورت کلیک اینجا را صدا بزند
-                              textProperty = "name" // یک لیست داریم کهه در بیشتر موافع فیلدهای آن نام و شناسه است اما چون ممکن است فرق داشته باشد ما اسم فیلدها را هم پرارامتریزه کردیم
-                              valueProperty = "id"
-                      />        
-                </div>
-                <div className="filmPart">
-                  {/* <div className="hello"> */}
+              {/* <div className="allGenresMovies"> */}
+                <div className="container">
+                  <ul className="genresList">
+                    {renderGenre()}
+                  </ul>         
+                  </div>                  
+                  {/* <div className="filmPart"> */}
                     {/* <MoviesByGenreInfinit genreId={selectedGenre.id} /> */}
                     
-                    <ul className="filmBox">
+                    {/* <ul className="filmBox">
                         {loopFilms()}
                     </ul>
                     <div className="buttonHolder">
                      <button onClick={getApi1} className="load-more regular-btn">{hasMore ? "load more" : "no more items"}</button>
-                    </div>
+                    </div> */}
                   {/* </div> */}
-                </div>
-              </div>
+                  {/* </div> */}
+              {/* </div> */}
              </Layout>
            </Fragment>)
   }

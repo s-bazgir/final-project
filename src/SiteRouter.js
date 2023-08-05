@@ -3,7 +3,7 @@ import HomePage from './Pages/HomePage';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
 import Movies from './Pages/Movies';
-import Genres2 from './Pages/Genres2';
+import Genres4 from './Pages/Genres4';
 import SingleMovie from './Pages/SingleMovie';
 import SingleGenre from './Pages/SingleGenre';
 import Search  from './Pages/Search';
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/genres",
-    element: <Genres2 />,
+    element: <Genres4 />,
   },
   {
    path: "/singleMovie/:id",

@@ -4,9 +4,9 @@
      /* #fff; */
     border: 1px solid #fff;
     max-height:80vh;
-    position: fixed;
+    /* position: fixed;
     top:60px;
-    left:50px;
+    left:50px; */
     width:200px;
     overflow-y: auto;
 }
