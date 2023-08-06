@@ -13,7 +13,7 @@ export default function AppDownload(){
                 <p>Download App</p>
                 </div>
                 <div className="downloadPart">
-                    <a href="https://r.search.yahoo.com/_ylt=Awr92CYmALtkVxwMk5RXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1690005670/RO=10/RU=https%3a%2f%2fplay.google.com%2f/RK=2/RS=_x3Ssb_aYqJNTFi7i375OXWgASc-">
+                    <a target="_blank" href="https://play.google.com/">
                         <div className="ax-matn">
                                 <img src="../../assets/images/googleplay.png"/>
                                 <div className="matn">
@@ -22,7 +22,7 @@ export default function AppDownload(){
                                 </div>                        
                         </div>
                     </a>
-                    <a href="https://cafebazaar.ir/install?l=en">
+                    <a href="https://cafebazaar.ir/install?l=en" target="_blank">
                         <div className="ax-matn">
                             <img src="../../assets/images/bazar.png" />
                             <div className="matn">
@@ -31,7 +31,7 @@ export default function AppDownload(){
                             </div>
                         </div>
                     </a>    
-                    <a href="https://sibche.com/">
+                    <a target="_blank" href="https://sibche.com/">
                         <div className="ax-matn">
                             <img src="../../assets/images/sibche.png" />
                             <div className="matn">

@@ -43,6 +43,8 @@
     background-color: var(--color-movieDetail-hover);
      /* #242424; */
     opacity: 1;
+    /* height:1000px; */
+    /* margin-bottom: 50px; */
 }
 .moviePanel .movieDetail .moviePoster img{
    height:90%;
@@ -105,7 +107,7 @@
     background-color: var(--background-color);
      /* #000000; */
     padding-right: 10px;
-    width:90%;
+    width:100%;
     height:90%;
     transition: all 1s;  
 }
@@ -141,6 +143,7 @@
         gap:0;
         margin-bottom: 10px;
         background-image: none !important;
+        height:1000px;
     }
     .moviePanel .movieDetail .column1{
         width:100%;
@@ -156,7 +159,6 @@
     {
         width:100%;      
         line-height: 40px; 
-    }
-   
+    }    
 }
 

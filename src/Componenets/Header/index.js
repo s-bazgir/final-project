@@ -62,6 +62,7 @@ function handleChangeTheme(){
     
   const root = document.documentElement;
    
+
   if(themSite){
               if (themSite === "1") {
                 root.style.setProperty("--background-color", "#fff");
@@ -73,7 +74,7 @@ function handleChangeTheme(){
                 root.style.setProperty("--color-serarch-result-active", "aliceblue");
                 root.style.setProperty("--color-movie-panel", "#D7E2F9");
                 root.style.setProperty("--color-title-icon", "aquamarine");
-                root.style.setProperty("--color-movieDetail-hover", "#242424");
+                root.style.setProperty("--color-movieDetail-hover", "#B4C5E3");
                 root.style.setProperty("--color-fieldgroup", "#FFC90E");
                 root.style.setProperty("--color-load-more", "#AAAAAA");
                 root.style.setProperty("--color-scroll", "#F4F4F5");
@@ -99,7 +100,7 @@ function handleChangeTheme(){
                 root.style.setProperty("--color-serarch-result-active", "aliceblue");
                 root.style.setProperty("--color-movie-panel", "#2B2B2B");
                 root.style.setProperty("--color-title-icon", "aquamarine");
-                root.style.setProperty("--color-movieDetail-hover", "#B4C5E3");
+                root.style.setProperty("--color-movieDetail-hover", "#242424");
                 root.style.setProperty("--color-fieldgroup", "#F8FF1E");
                 root.style.setProperty("--color-load-more", "#AAAAAA");
                 root.style.setProperty("--color-scroll", "#5E5E5E");
