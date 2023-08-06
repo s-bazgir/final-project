@@ -1,4 +1,3 @@
-
 import React , { Fragment, useEffect, useState } from "react";
 import Layout from '../../Componenets/Layout';
 import axios from "axios";
@@ -78,7 +77,6 @@ export default function Genres3(){
         // setHasMore(true);
           // localStorage.setItem("genre",genre.id);
        }
-
        function loopFilms() {
         return movies.map(function(movie) {
            const {id , poster , title} = movie;
