@@ -40,9 +40,9 @@ export default function Footer(){
                 <li>
                   <Link to="/FAQ">FAQ</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/SocialMedia">Social Media</Link>
-                </li>                    
+                </li>                     */}
               </ul>
             </li>
         </ul>
