@@ -63,6 +63,7 @@ export default function Genres4(){
       function handleGenreSelect(genre){
         setselectedGenre(genre);  
           // localStorage.setItem("genre",genre.id);
+          document.getElementsByClassName("uu")[0].appendChild=`<MoviesByGenreInfinit genreId=${genre.id} />`
        }
 
        function loopFilms() {
@@ -93,7 +94,7 @@ export default function Genres4(){
          function renderGenre(){
           return(
             genres.map(function(item) {
-             return(<li onClick = { handleGenreSelect }
+             return(<li onClick={() => handleGenreSelect(item)} // تغییر اینجا
                         key={item.id}
                         className={item === selectedGenre ? "list-group-item active" : "list-group-item"}
                      >{item.name}</li>)
@@ -108,8 +109,10 @@ export default function Genres4(){
                 <div className="container">
                   <ul className="genresList">
                     {renderGenre()}
-                  </ul>         
-                  </div>                  
+                  </ul>
+                </div>         
+                  <div className="uu">  
+                  </div>                
                   {/* <div className="filmPart"> */}
                     {/* <MoviesByGenreInfinit genreId={selectedGenre.id} /> */}
                     

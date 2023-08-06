@@ -6,13 +6,13 @@ import  "./style.css";
 import ListGroup from '../../Componenets/ListGroup';
 import { Link  } from "react-router-dom";
 
-export default function Genres2(){
+export default function Genres3(){
  
     const [genres , setGenres] = useState([]);
     const [selectedGenre, setselectedGenre] = useState([{id:1 , name: "Crime"}]);
     const [movies , setMovies] = useState([]);
-    const [pageNumber , setPageNumber] = useState(1);
-    const [hasMore, setHasMore] = useState(true);
+    // const [pageNumber , setPageNumber] = useState(1);
+    // const [hasMore, setHasMore] = useState(true);
            
     async function getApi(){
                       try{
@@ -29,6 +29,7 @@ export default function Genres2(){
       // localStorage.setItem("genre",1);
       // }
         getApi();
+        getApi1();
         },[]);   
 
         useEffect(function(){ 
@@ -36,33 +37,33 @@ export default function Genres2(){
             },[selectedGenre]); 
         
         async function getApi1(){
-          // try{
-          //   const response = await axios.get(`https://moviesapi.ir/api/v1/genres/${selectedGenre.id}/movies?page=${pageNumber}`);
-          //   setMovies(response.data.data);
-          //       }catch(e){    
-          // }
-
-
-          if(hasMore){
-            try{
-            const response = await axios.get(`https://moviesapi.ir/api/v1/genres/${selectedGenre.id}/movies?page=${pageNumber}`);
-            const mergedArray = movies.concat(response.data.data);
-            setMovies(mergedArray);                      
-            setPageNumber(pageNumber+1);
-            if(response.data.data.length === 0 )
-               setHasMore(false);
+          try{
+            const response = await axios.get(`https://moviesapi.ir/api/v1/genres/${selectedGenre.id}/movies?page=${1}`);
+            setMovies(response.data.data);
                 }catch(e){    
-            }
-            }
+          }
+
+          // if(hasMore){
+          //   try{
+          //   const response = await axios.get(`https://moviesapi.ir/api/v1/genres/${selectedGenre.id}/movies?page=${pageNumber}`);
+          //   const mergedArray = movies.concat(response.data.data);
+          //   setMovies(mergedArray);                      
+          //   setPageNumber(pageNumber+1);
+          //   if(response.data.data.length === 0 )
+          //      setHasMore(false);
+          //       }catch(e){    
+          //   }
+          //   }
 
         }        
-        useEffect(function(){   
-          setHasMore(true);             
-          getApi1();
-          },[selectedGenre]);   
+        // useEffect(function(){   
+          // setHasMore(true);             
+          // getApi1();
+          // },[selectedGenre]);   
       
       function handleGenreSelect(genre){
         setselectedGenre(genre);  
+        // setHasMore(true);
           // localStorage.setItem("genre",genre.id);
        }
 
@@ -109,9 +110,9 @@ export default function Genres2(){
                     <ul className="filmBox">
                         {loopFilms()}
                     </ul>
-                    <div className="buttonHolder">
+                    {/* <div className="buttonHolder">
                      <button onClick={getApi1} className="load-more regular-btn">{hasMore ? "load more" : "no more items"}</button>
-                    </div>
+                    </div> */}
                   {/* </div> */}
                 </div>
               </div>

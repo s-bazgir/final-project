@@ -6,10 +6,9 @@
     overflow-x: auto;
     color: #fff;
     margin-top:100px;
-    flex-wrap: nowrap;
-    
+    flex-wrap: nowrap;    
 }
-.list-group-item{
+.genresList .list-group-item{
     background-color: var(--app-background-app-holder);
      /* #303030; */
     color:var(--color-font);
@@ -25,21 +24,10 @@
     padding: 10px;
     border: 1px solid #fff;
 }
-.list-group .active{
+.genresList .list-group .active{
     background-color: aliceblue;
     color: var(--background-color);
      /* #000; */
-}
-.allGenresMovies{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap:20px;   
-}
-.genreList{
-    margin-top: 80px;
-    width:17%;
-    margin-left: 30px;
 }
 .filmPart{
     width:83%;
