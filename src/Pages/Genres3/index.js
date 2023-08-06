@@ -11,10 +11,9 @@ export default function Genres3(){
     const [genres , setGenres] = useState([]);
     const [selectedGenre, setselectedGenre] = useState([{id:1 , name: "Crime"}]);
     const [movies , setMovies] = useState([]);
-    // const [pageNumber , setPageNumber] = useState(1);
-    // const [hasMore, setHasMore] = useState(true);
+    const [loading,setLoading]=useState();
            
-    async function getApi(){
+    async function getApiGenre(){
                       try{
                       const response = await axios.get(`https://moviesapi.ir/api/v1/genres`);                  
                       setGenres(response.data);
@@ -28,19 +27,32 @@ export default function Genres3(){
       // if(!we){
       // localStorage.setItem("genre",1);
       // }
-        getApi();
-        getApi1();
+        getApiGenre();
+        getApiFilms();
         },[]);   
 
         useEffect(function(){ 
-            getApi1();
+            getApiFilms();
             },[selectedGenre]); 
         
-        async function getApi1(){
+        async function getApiFilms(){
           try{
-            const response = await axios.get(`https://moviesapi.ir/api/v1/genres/${selectedGenre.id}/movies?page=${1}`);
-            setMovies(response.data.data);
-                }catch(e){    
+            setLoading(true);
+            let response = await axios.get(`https://moviesapi.ir/api/v1/genres/${selectedGenre.id}/movies?page=${1}`);
+            let mergedArray = response.data.data;
+
+            for(let i=2; i<= response.data.metadata.page_count ; i++){
+                
+            response = await axios.get(`https://moviesapi.ir/api/v1/genres/${selectedGenre.id}/movies?page=${i}`);
+            mergedArray = mergedArray.concat(response.data.data);
+           
+
+            }
+            setMovies(mergedArray);
+            setLoading(false);
+          //  setMovies(response.data.data);
+                }catch(e){  
+                  setLoading(false)  
           }
 
           // if(hasMore){
@@ -90,6 +102,7 @@ export default function Genres3(){
                )
                }
            )
+              
          }
    
     return (<Fragment>
